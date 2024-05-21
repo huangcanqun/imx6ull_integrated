@@ -1,7 +1,12 @@
 #include "main.h"
-using namespace std;
 int main()
 {
-	cout << "helloworld" << endl;
+	cout << "----------------------------------------helloworld----------------------------------------" << endl;
+	ListNode* list = CreateListNode();
+	list->val = 88;
+	list->Next = NULL;
+	list = AddList(list, 99);
+	DisplayList(list);
+
 	return 0;
 }

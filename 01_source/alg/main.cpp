@@ -2,11 +2,14 @@
 int main()
 {
 	cout << "----------------------------------------helloworld----------------------------------------" << endl;
-	ListNode* list = CreateListNode();
-	list->val = 88;
-	list->Next = NULL;
-	list = AddList(list, 99);
-	DisplayList(list);
+	ListNode* head = CreateList();
+	head = AddList(head, 99);
+	head = AddList(head, 88);
+	head = AddList(head, 77);
+
+
+
+	DisplayList(head);
 
 	return 0;
 }
